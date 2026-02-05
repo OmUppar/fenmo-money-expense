@@ -35,6 +35,17 @@ Minimal full-stack expense tracker built with NestJS, TypeORM, PostgreSQL, and R
 
 The API runs on `http://localhost:3000` and the UI on `http://localhost:5173`.
 
+## Live UI (GitHub Pages)
+UI URL:
+```
+https://omuppar.github.io/fenmo-money-expense/
+```
+
+If the UI shows the README instead of the app, ensure GitHub Pages is set to:
+- Source: `Deploy from a branch`
+- Branch: `gh-pages`
+- Folder: `/ (root)`
+
 ## API
 
 ### POST `/expenses`
@@ -69,3 +80,7 @@ Query params:
 - Multi-user support
 - Advanced reporting/export
 - Expense editing/deletion
+
+## GitHub Pages Build Notes
+- The UI is built with Vite.
+- `web/vite.config.js` sets the `base` to `/fenmo-money-expense/` for GitHub Pages.
